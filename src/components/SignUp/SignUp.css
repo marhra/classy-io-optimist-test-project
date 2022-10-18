@@ -1,0 +1,12 @@
+input {
+    padding: 15px;
+    margin: 10px 0;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.signUp {
+    color: #C9CED3;
+}
