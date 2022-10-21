@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 2fr;
     height: 64rem;
     background-color: #F5F5F5;
+    font-family: 'Hind', sans-serif;
 }
 
 .leftPanel {
@@ -54,7 +55,6 @@
 }
 
 .mainPanel__header {
-    font-family: 'Hind';
     font-style: normal;
     font-weight: 400;
 
