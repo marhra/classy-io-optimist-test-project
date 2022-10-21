@@ -5,22 +5,12 @@ import bgImage from './img/classy_bg 1.png'
 const SignIn = (props) => {
 
   const [user, setUser] = useState({
-    first_name:"",
-    last_name:"",
     email:"",
     password:"",
-    repeat_password:"",
   });
 
   const handleSubmit= (e) => {
     e.preventDefault();
-    if (user.password === user.repeat_password && user.username !== '' && user.email !== '' && user.password !== '' && user.repeat_password !== '') {
-        console.log(user)
-      } else if (user.password !== user.repeat_password) {
-        alert('The password fields must match.')
-      } else {
-        alert('Please fill out all required fields.')
-      }
   };
 
   return (
