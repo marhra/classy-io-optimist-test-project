@@ -1,4 +1,4 @@
-.signUp {
+.signIn {
     display: grid;
     grid-template-columns: 1fr 2fr;
     height: 64rem;
@@ -57,6 +57,7 @@
     font-family: 'Hind';
     font-style: normal;
     font-weight: 400;
+
 }
 
 .mainPanel__header h1 {

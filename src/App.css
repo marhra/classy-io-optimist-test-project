@@ -1,6 +1,17 @@
+@import url('http://fonts.cdnfonts.com/css/hind');
+@import url('http://fonts.cdnfonts.com/css/futura-md-bt');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  background: #F5F5F5;
+  background-size: cover;
+  background-position: center;
 }

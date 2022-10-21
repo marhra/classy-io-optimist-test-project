@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import "./SignUp.css"
+import "./SignIn.css"
 import bgImage from './img/classy_bg 1.png'
 
-const SignUp = (props) => {
+const SignIn = (props) => {
 
   const [user, setUser] = useState({
     first_name:"",
@@ -25,7 +25,7 @@ const SignUp = (props) => {
 
   return (
     <>
-    <div className="signUp">
+    <div className="signIn">
       <div className="leftPanel">
         <div className="leftPanel__elem">
           <p>“Intelligence is like a four-wheel drive. It allows you to get stuck in more remote places..”</p>
@@ -36,36 +36,11 @@ const SignUp = (props) => {
 
       <div className="mainPanel">
             <div className="mainPanel__header">
-              <h1>Get started absolutely free.</h1>
+              <h1>Sign in to Classy.</h1>
               <p> Enter your details below.</p>
             </div>
             <div className="mainPanel__form">
               <form onSubmit={handleSubmit}>
-                  <div className="firstName">
-                      <label htmlFor="firstName" hidden>First name</label>
-                      <input
-                          id="first_name"
-                          name="first_name"
-                          type="text"
-                          value={user.first_name} 
-                          onChange={(e) => setUser({ ...user, first_name: e.target.value })}
-                          placeholder="First name"
-                          required
-                        />
-                  </div>
-
-                  <div className="lastName">
-                      <label htmlFor="lastName" hidden>Last name</label>
-                      <input 
-                          id="last_name"
-                          name="last_name"
-                          type="text"
-                          value={user.last_name} 
-                          onChange={(e) => setUser({ ...user, last_name: e.target.value })}
-                          placeholder="Last name"
-                        />
-                  </div>
-
                   <div className="email">
                       <label htmlFor="email" hidden>Email</label>
                       <input
@@ -91,19 +66,6 @@ const SignUp = (props) => {
                           required
                         />
                   </div>
-
-                  <div className="repeatPassword">
-                      <label htmlFor="repeatPassword" hidden>Repeat password </label>
-                      <input
-                          id="repeat_password" 
-                          name="repeat_password" 
-                          type="password" 
-                          value={user.repeat_password}
-                          onChange={(e) => setUser({ ...user, repeat_password: e.target.value })}
-                          placeholder="Repeat password"
-                          required
-                        />
-                  </div>
                 
                   <div className="button">
                       <button type="submit">Sign in</button>
@@ -117,4 +79,4 @@ const SignUp = (props) => {
           
 };
 
-export default SignUp;
+export default SignIn;
