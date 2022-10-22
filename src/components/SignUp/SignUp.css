@@ -99,7 +99,7 @@ label{
     display: none;
 }
 
-button{
+.button--signUp {
     width: 15rem;
     height: 3.5625rem;
     padding: 0.8125rem 5rem 0.75rem;
@@ -117,3 +117,22 @@ button{
     margin: 4rem 0 0 0;
     text-transform: uppercase;
   }
+
+  .button--signUp:hover {
+    background: #20BD78
+}
+
+@media only screen and (max-width: 600px) {
+    .leftPanel {
+        display: none;
+    }
+
+    .mainPanel {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .mainPanel__form {
+        width: 100%;
+    }
+}

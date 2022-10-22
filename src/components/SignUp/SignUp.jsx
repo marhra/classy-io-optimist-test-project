@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./SignUp.css"
-import bgImage from './img/classy_bg 1.png'
 
 const SignUp = (props) => {
 
@@ -106,7 +105,7 @@ const SignUp = (props) => {
                   </div>
                 
                   <div className="button">
-                      <button type="submit">Sign in</button>
+                      <button className="button--signUp" type="submit">Sign up</button>
                   </div>
               </form>
             </div>
